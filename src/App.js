@@ -1,16 +1,30 @@
-import React from 'react'
-import users from './json/users.json'
-import UserList from "./components/UserList";
+import React from 'react';
+import users from './json/users.json';
+import UserList from './components/Profile/UserList';
+
+import Statistics from './components/Statistics/Statistics';
+import statisticalData from './json/statistics-data.json';
+
+import FriendList from "./components/FriendList/FriendList";
+import friends from './json/friends.json'
+
+import transaction from './json/transactions.json';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 
 const App = () => (
         <div>
-            <h1>Главный контейнер прилодения</h1>
-
-        <UserList users={users} />
-
-            
+            <UserList users={users} />
+        
+            <Statistics
+                title="Upload stats"
+                statisticalData={statisticalData} />
+        
+            <FriendList friends={friends} />
+        
+            <TransactionHistory transaction={transaction}/>
         </div>
     )
 
 export default App;
+

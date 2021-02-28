@@ -2,11 +2,13 @@ import React from 'react'
 import Profile from './Profile'
 
 
-const UserList = ({users}) => (
+const UserList = ({ users }) => {
+    // console.log(users);
+    return (
         <ul>
             {users.map(({ name, tag, location, avatar, stats}) => {
                 return (
-                    <li key = {name}>
+                    <li key = {tag}>
                         <Profile
                         name={name}
                         tag={tag}
@@ -21,6 +23,7 @@ const UserList = ({users}) => (
                 })}
             </ul>
     )
+}
 
 
 export default UserList;

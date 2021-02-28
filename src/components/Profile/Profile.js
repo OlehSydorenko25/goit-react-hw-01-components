@@ -1,9 +1,10 @@
 import React from 'react';
-import defaultAvatar from '../images/default-avatar.png';
+import defaultAvatar from '../../images/default-avatar.png';
 import PropTypes from "prop-types";
 
 
-const Profile = ({ name, tag, location, avatar, followers, views, likes}) => (
+const Profile = ({ name, tag, location, avatar, followers, views, likes }) => {
+    return (
     <div>
         <div>
             <img
@@ -31,7 +32,8 @@ const Profile = ({ name, tag, location, avatar, followers, views, likes}) => (
             </li>
         </ul>
     </div>
-);
+    )
+};
     
 Profile.defaultProps = {
     avatar: defaultAvatar
