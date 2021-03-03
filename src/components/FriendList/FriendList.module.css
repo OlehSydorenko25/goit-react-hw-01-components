@@ -1,0 +1,35 @@
+.friendItem div {
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.friendItem img {
+  width: 80px;
+  border-radius: 4px;
+  background-color: #c2c2c2;
+}
+
+.friendItem p {
+  margin-left: 30px;
+}
+
+.online {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(32, 163, 32);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.offline {
+  composes: online;
+  background-color: rgb(219, 36, 36);
+}

@@ -1,14 +1,15 @@
 import React from 'react'
 import Profile from './Profile'
+import styles from './Profile.module.css'
+
 
 
 const UserList = ({ users }) => {
-    // console.log(users);
     return (
-        <ul>
+        <ul className={styles.profile}>
             {users.map(({ name, tag, location, avatar, stats}) => {
                 return (
-                    <li key = {tag}>
+                    <li key = {tag} className={styles.block}>
                         <Profile
                         name={name}
                         tag={tag}

@@ -1,4 +1,6 @@
 import React from 'react';
+import './styles.css'
+
 import users from './json/users.json';
 import UserList from './components/Profile/UserList';
 
@@ -13,7 +15,7 @@ import TransactionHistory from './components/TransactionHistory/TransactionHisto
 
 
 const App = () => (
-        <div>
+        <div className='main'>
             <UserList users={users} />
         
             <Statistics

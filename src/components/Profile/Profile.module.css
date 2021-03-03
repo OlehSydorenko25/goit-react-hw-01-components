@@ -1,0 +1,46 @@
+.avatar {
+  border-radius: 50%;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.text {
+  color: rgb(165, 165, 165);
+}
+
+.numbers {
+  font-weight: 700;
+}
+
+.profileBlock {
+  width: 300px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+}
+
+.info li {
+  padding: 20px;
+  border: 1px solid #e7e4e4;
+  background-color: rgb(247, 247, 247);
+}
+
+.profile {
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.profile .block {
+  margin-right: 40px;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}

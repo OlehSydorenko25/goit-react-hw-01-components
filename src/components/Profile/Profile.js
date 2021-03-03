@@ -1,34 +1,35 @@
 import React from 'react';
 import defaultAvatar from '../../images/default-avatar.png';
 import PropTypes from "prop-types";
+import styles from './Profile.module.css'
 
 
 const Profile = ({ name, tag, location, avatar, followers, views, likes }) => {
     return (
-    <div>
+    <div className={styles.profileBlock}>
         <div>
             <img
+                className={styles.avatar}
                 src={avatar}
                 alt="Аватар пользователя"
-                width="200"
             />
-                <p>{name}</p>
-                <p>@{tag}</p>
-                <p>{location}</p>
+                <p className={styles.name}>{name}</p>
+                <p className={styles.text}>@{tag}</p>
+                <p className={styles.text}>{location}</p>
         </div>
 
-        <ul>
+        <ul className={styles.info}>
             <li>
-                <span>Followers</span>
-                <span> {followers}</span>
+                <span className={styles.text}>Followers</span>
+                <span className={styles.numbers}> {followers}</span>
             </li>
             <li>
-                <span>Views</span>
-                <span> {views}</span>
+                <span className={styles.text}>Views</span>
+                <span className={styles.numbers}> {views}</span>
             </li>
             <li>
-                <span>Likes</span>
-                <span> {likes}</span>
+                <span className={styles.text}>Likes</span>
+                <span className={styles.numbers}> {likes}</span>
             </li>
         </ul>
     </div>

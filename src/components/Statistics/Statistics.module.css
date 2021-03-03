@@ -1,0 +1,31 @@
+.statistics {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.title {
+  text-align: center;
+  padding: 30px;
+  background-color: #ccc;
+  text-transform: uppercase;
+}
+
+.list {
+  display: flex;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+}
+
+.element .text {
+  color: rgb(255, 255, 255);
+}
+
+.element:not(:last-child) {
+}
