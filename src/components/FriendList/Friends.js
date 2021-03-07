@@ -1,17 +1,17 @@
 import React from 'react';
-import defaultAvatar from '../../images/default-avatar.png';
 import PropTypes from "prop-types";
+import defaultAvatar from '../../images/default-avatar.png';
 import styles from'./FriendList.module.css'
 
 
 
 const Friends = ({ name, avatar, isOnline, id }) => {
     return (
-        <div key={id}>
+        <li className={styles.friendItem}>
             {isOnline ? <span className={styles.online}></span> : <span className={styles.offline}></span>}
             <img src={avatar} alt='Аватар' />
             <p>{name}</p>
-        </div>
+        </li>
     );
 }
 

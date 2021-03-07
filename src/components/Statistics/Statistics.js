@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import styles from './Statistics.module.css'
-import StatisticsList from './StatisticsList'
+import StatisticsElement from './StatisticsList'
 
 
 
-const Statistics = ({ statisticalData, title }) => {
+const Statistics = ({ stats, title }) => {
     return (
         <section className={styles.statistics}>
             {title && <h2 className={styles.title}>{title}</h2>}
             
             <ul className={styles.list}>
-                {statisticalData.map(({ id, label, percentage }) => {
+                {stats.map(({ id, label, percentage }) => {
                     return (
-                        <StatisticsList
+                        <StatisticsElement
                             key={id}
                             label={label}
                             percentage={percentage}
@@ -26,7 +26,7 @@ const Statistics = ({ statisticalData, title }) => {
 }
 
 Statistics.propTypes = {
-    statisticalData: PropTypes.array.isRequired,
+    stats: PropTypes.array.isRequired,
     title: PropTypes.string
 }
 
