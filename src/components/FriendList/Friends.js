@@ -5,7 +5,7 @@ import styles from'./FriendList.module.css'
 
 
 
-const Friends = ({ name, avatar, isOnline, id }) => {
+const Friends = ({ name, avatar, isOnline}) => {
     return (
         <li className={styles.friendItem}>
             {isOnline ? <span className={styles.online}></span> : <span className={styles.offline}></span>}
@@ -23,7 +23,6 @@ Friends.protoTypes = {
     name: PropTypes.string.isRequired,
     avatar: PropTypes.string,
     isOnline: PropTypes.bool.isRequired,
-    id: PropTypes.string.isRequired 
 }
  
 export default Friends;
